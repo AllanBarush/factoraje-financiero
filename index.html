@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Factoraje Financiero — Diplomado | RiskMathics</title>
+<meta name="description" content="Diplomado en Factoraje Financiero, Supply Chain Finance & FactorTech. 200 horas, 23 módulos, 76 clases, 115 capstones, 7 fases. Modelo Centinela Antifraude. RiskMathics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1a120a;--navy-deep:#0c0703;--navy-mid:#2a1a0a;--accent:#c3b592;--accent-dark:#b8933d;--accent-glow:#e5c97a;--accent-soft:#d4c4a0;--purple:#c8943a;--ivory:#F5F4F8;--ivory-warm:#F9F8FB;--white:#FFF;--text-primary:#1A1A2E;--text-secondary:#5A5B7D;--border-subtle:rgba(0,0,0,0.06);--shadow-md:0 8px 32px rgba(12,7,3,0.12);--r-sm:8px;--r-md:16px;--r-lg:24px}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;font-size:16px;-webkit-font-smoothing:antialiased}body{font-family:'Lora',Georgia,serif;font-size:1rem;line-height:1.72;color:var(--text-primary);background:var(--ivory);overflow-x:hidden}
+h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;font-weight:700;line-height:1.15;letter-spacing:-.02em}
+.display-xl{font-size:clamp(2.8rem,6vw,5.2rem);font-weight:800;letter-spacing:-.03em}.display-md{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700}
+.section-label{font-family:'Poppins',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-dark)}
+.body-lg{font-size:1.125rem;line-height:1.78}.container{max-width:1200px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem)}section{padding:clamp(4rem,8vw,8rem) 0}
+.site-header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 0;background:rgba(12,7,3,.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(195,181,146,.08);transition:all .4s}
+.header-inner{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem)}.header-logo{height:40px;filter:brightness(1.1)}
+.header-nav{display:flex;gap:2rem;align-items:center}.header-nav a{font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:500;color:rgba(255,255,255,.7);text-decoration:none;transition:color .3s}.header-nav a:hover{color:var(--accent)}
+.btn-header-cta{font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:600;color:var(--white)!important;background:var(--purple);padding:.6rem 1.4rem;border-radius:100px;text-decoration:none;transition:all .3s}.btn-header-cta:hover{background:var(--accent-dark);box-shadow:0 0 24px rgba(195,181,146,.4)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;background:var(--navy-deep);overflow:hidden;padding-top:80px}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 100% 80% at 50% 45%,var(--navy-mid) 0%,var(--navy-deep) 75%)}
+.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 45% at 50% 42%,rgba(200,148,58,.08) 0%,transparent 70%)}
+.hero-content{position:relative;z-index:2;width:100%;max-width:1200px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem);display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:center}
+.hero-text{max-width:720px}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(195,181,146,.1);border:1px solid rgba(195,181,146,.2);padding:.5rem 1.2rem;border-radius:100px;margin-bottom:2rem}
+.hero-badge span{font-family:'Poppins',sans-serif;font-size:.75rem;font-weight:600;color:var(--accent);letter-spacing:.12em;text-transform:uppercase}
+.hero-badge .dot{width:6px;height:6px;background:var(--accent);border-radius:50%;animation:pd 2s ease-in-out infinite}@keyframes pd{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.5)}}
+.hero h1{color:var(--white);margin-bottom:.5rem}.hero h1 .accent{color:var(--white);position:relative;display:inline-block}.hero h1 .accent::after{content:'';position:absolute;bottom:4px;left:50%;transform:translateX(-50%);width:60px;height:3px;background:var(--accent);border-radius:2px}
+.hero-tagline{font-family:'Lora',serif;font-style:italic;font-size:clamp(1.1rem,2vw,1.5rem);color:var(--accent-soft);margin-bottom:.6rem}
+.hero-date{font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:500;color:var(--accent);letter-spacing:.2em;text-transform:uppercase;margin-bottom:2.5rem}
+.hero-abstract{font-family:'Lora',serif;font-size:1.05rem;color:rgba(255,255,255,.72);line-height:1.85;margin-bottom:2.5rem;max-width:600px}
+.hero-stats{display:flex;gap:2.5rem;margin-bottom:2.5rem}.hero-stat-number{font-family:'Poppins',sans-serif;font-size:2.2rem;font-weight:800;color:var(--accent);line-height:1;letter-spacing:-.03em}
+.hero-stat-label{font-family:'Poppins',sans-serif;font-size:.72rem;font-weight:500;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.1em;margin-top:.3rem}
+.btn-primary{font-family:'Poppins',sans-serif;font-size:.9rem;font-weight:600;color:var(--white);background:var(--purple);padding:1rem 2.2rem;border-radius:100px;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;transition:all .35s;border:none;cursor:pointer}
+.btn-primary:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 8px 32px rgba(200,148,58,.35)}
+.btn-secondary{font-family:'Poppins',sans-serif;font-size:.9rem;font-weight:500;color:rgba(255,255,255,.8);background:transparent;padding:1rem 2.2rem;border-radius:100px;text-decoration:none;border:1px solid rgba(255,255,255,.2);display:inline-flex;align-items:center;transition:all .35s}
+.btn-secondary:hover{border-color:var(--accent);color:var(--accent)}.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+.hero-sidebar{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--r-lg);padding:2.5rem;backdrop-filter:blur(12px)}
+.hero-sidebar h3{font-size:.72rem;font-weight:600;color:var(--accent);letter-spacing:.15em;text-transform:uppercase;margin-bottom:1.5rem}
+.sidebar-item{display:flex;justify-content:space-between;align-items:baseline;padding:.85rem 0;border-bottom:1px solid rgba(255,255,255,.06)}.sidebar-item:last-child{border:none}
+.sidebar-item-label{font-family:'Poppins',sans-serif;font-size:.8rem;color:rgba(255,255,255,.5)}.sidebar-item-value{font-family:'Poppins',sans-serif;font-size:.9rem;color:var(--white);font-weight:600;text-align:right}.sidebar-item-value .hl{color:var(--accent)}
+.sidebar-start{margin-top:1.5rem;text-align:center;padding:1.2rem;background:rgba(195,181,146,.08);border:1px solid rgba(195,181,146,.2);border-radius:var(--r-md)}
+.sidebar-start .label{font-family:'Poppins',sans-serif;font-size:.65rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.15em}
+.sidebar-start .date{font-family:'Poppins',sans-serif;font-size:1.4rem;font-weight:700;color:var(--accent);margin-top:.25rem}
+.abstract-section{background:var(--white);border-bottom:1px solid var(--border-subtle)}
+.abstract-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}.abstract-content p{font-size:1.05rem;color:var(--text-secondary);margin-bottom:1.25rem}.abstract-content p strong{color:var(--text-primary);font-weight:600}
+.abstract-pullquote{position:relative;padding:2.5rem;background:var(--navy-deep);border-radius:var(--r-lg);color:var(--white)}.abstract-pullquote::before{content:'"';position:absolute;top:-.3rem;left:1.5rem;font-family:'Poppins',sans-serif;font-size:5rem;font-weight:800;color:var(--accent);opacity:.3;line-height:1}
+.abstract-pullquote p{font-family:'Lora',serif;font-style:italic;font-size:1.15rem;line-height:1.75;color:rgba(255,255,255,.85);position:relative;z-index:1}
+.abstract-pullquote .attribution{margin-top:1rem;font-family:'Poppins',sans-serif;font-style:normal;font-size:.75rem;color:var(--accent);font-weight:600}
+.sector-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:3rem}
+.sector-chip{background:var(--ivory-warm);border:1px solid var(--border-subtle);border-radius:var(--r-sm);padding:1rem 1.2rem;text-align:center;font-family:'Poppins',sans-serif;font-size:.78rem;font-weight:600;color:var(--navy);transition:all .3s}
+.sector-chip:hover{border-color:var(--accent-dark);box-shadow:0 2px 8px rgba(12,7,3,.06)}.sector-chip .sub{display:block;font-weight:400;font-size:.68rem;color:var(--text-secondary);margin-top:.2rem}
+.highlights-section{background:var(--navy-deep);position:relative;overflow:hidden}.highlights-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(200,148,58,.06) 0%,transparent 50%)}
+.highlights-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;position:relative;z-index:1}
+.highlight-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:var(--r-md);padding:2rem;transition:all .4s}
+.highlight-card:hover{background:rgba(200,148,58,.05);border-color:rgba(195,181,146,.15);transform:translateY(-3px)}
+.highlight-number{font-family:'Poppins',sans-serif;font-size:.7rem;font-weight:700;color:var(--accent);letter-spacing:.12em;margin-bottom:.75rem}
+.highlight-card h3{font-size:1.05rem;font-weight:600;color:var(--white);margin-bottom:.6rem;line-height:1.35}
+.highlight-card p{font-family:'Lora',serif;font-size:.9rem;color:rgba(255,255,255,.55);line-height:1.65}
+.audience-section{background:var(--white)}.audience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3rem}
+.audience-card{padding:1.8rem;border:1px solid var(--border-subtle);border-radius:var(--r-md);transition:all .35s;background:var(--white)}
+.audience-card:hover{border-color:var(--accent-dark);box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.audience-card h4{font-size:.95rem;color:var(--navy);margin-bottom:.5rem}.audience-card p{font-size:.85rem;color:var(--text-secondary);line-height:1.6}
+.curriculum-section{background:var(--ivory-warm)}
+.phase-header{display:flex;align-items:center;gap:1rem;margin-bottom:2rem;margin-top:3rem}
+.phase-tag{font-family:'Poppins',sans-serif;font-size:.65rem;font-weight:700;color:var(--white);background:var(--purple);padding:.35rem 1rem;border-radius:100px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+.phase-header h3{font-size:1.1rem;color:var(--navy)}
+.module-card{background:var(--white);border:1px solid var(--border-subtle);border-radius:var(--r-md);margin-bottom:1rem;overflow:hidden;transition:all .3s}.module-card:hover{box-shadow:var(--shadow-md)}
+.module-card-header{display:grid;grid-template-columns:56px 1fr auto;align-items:center;padding:1.25rem 1.5rem;cursor:pointer;gap:1.25rem}
+.module-number{font-family:'Poppins',sans-serif;font-size:1.2rem;font-weight:800;color:var(--purple);text-align:center;line-height:1}
+.module-info h4{font-size:.95rem;color:var(--navy);line-height:1.35;margin-bottom:.15rem}.module-meta{font-family:'Poppins',sans-serif;font-size:.7rem;color:var(--text-secondary)}
+.module-toggle{font-size:1.4rem;color:var(--purple);width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(200,148,58,.08);transition:transform .3s}
+.module-card.active .module-toggle{transform:rotate(45deg)}.module-body{display:none;padding:0 1.5rem 1.5rem;border-top:1px solid var(--border-subtle)}.module-card.active .module-body{display:block}
+.module-objective{background:rgba(200,148,58,.04);border-left:3px solid var(--purple);padding:1rem 1.25rem;margin:1rem 0 1.25rem;border-radius:0 var(--r-sm) var(--r-sm) 0}
+.module-objective h5{font-family:'Poppins',sans-serif;font-size:.72rem;font-weight:600;color:var(--accent-dark);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.5rem}
+.module-objective p{font-size:.9rem;color:var(--text-secondary);line-height:1.7}
+.module-topics h5{font-family:'Poppins',sans-serif;font-size:.78rem;font-weight:600;color:var(--navy);margin-bottom:.75rem;text-transform:uppercase;letter-spacing:.08em}
+.module-topics ul{list-style:none;padding:0}.module-topics li{position:relative;padding:.45rem 0 .45rem 1.5rem;font-size:.88rem;color:var(--text-secondary);line-height:1.55}
+.module-topics li::before{content:'';position:absolute;left:0;top:.85rem;width:6px;height:6px;background:var(--purple);border-radius:50%}
+.curriculum-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem;padding:2.5rem;background:var(--navy-deep);border-radius:var(--r-lg)}
+.summary-item{text-align:center}.summary-item .number{font-family:'Poppins',sans-serif;font-size:2.5rem;font-weight:800;color:var(--accent);line-height:1}
+.summary-item .label{font-family:'Poppins',sans-serif;font-size:.7rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.12em;margin-top:.3rem}
+.form-section{background:var(--navy-deep);position:relative;overflow:hidden}.form-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 50%,rgba(200,148,58,.06) 0%,transparent 50%)}
+.form-container{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.form-left h2{color:var(--white);margin-bottom:1rem}.form-left p{color:rgba(255,255,255,.6);font-size:1.05rem;line-height:1.75;margin-bottom:2rem}
+.form-benefits{list-style:none;padding:0}.form-benefits li{display:flex;align-items:flex-start;gap:.75rem;padding:.6rem 0;font-family:'Poppins',sans-serif;font-size:.85rem;color:rgba(255,255,255,.7)}.form-benefits li .check{color:var(--accent);font-weight:700;font-size:1rem;flex-shrink:0}
+.form-right{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--r-lg);padding:2.5rem}
+.form-right h3{font-size:1.1rem;color:var(--white);margin-bottom:.4rem}.form-right .form-subtitle{font-family:'Poppins',sans-serif;font-size:.75rem;color:rgba(255,255,255,.4);margin-bottom:1.5rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.form-group{margin-bottom:1rem}
+.form-group label{display:block;font-family:'Poppins',sans-serif;font-size:.72rem;font-weight:500;color:rgba(255,255,255,.5);margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.08em}
+.form-group input,.form-group select{width:100%;padding:.8rem 1rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-sm);color:var(--white);font-family:'Lora',serif;font-size:.9rem;transition:all .3s;outline:none}
+.form-group input::placeholder{color:rgba(255,255,255,.25)}
+.form-group input:focus,.form-group select:focus{border-color:var(--accent);background:rgba(200,148,58,.06);box-shadow:0 0 0 3px rgba(200,148,58,.1)}
+.form-group select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23b5a3d3' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .8rem center;background-size:16px;padding-right:2.5rem}
+.form-group select option{background:var(--navy-deep);color:var(--white)}
+.form-disclaimer{font-family:'Poppins',sans-serif;font-size:.68rem;color:rgba(255,255,255,.3);margin-top:.5rem;line-height:1.5}
+.btn-submit{width:100%;margin-top:1rem;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;color:var(--white);background:var(--purple);padding:1.1rem;border:none;border-radius:var(--r-sm);cursor:pointer;transition:all .35s}
+.btn-submit:hover{background:var(--accent-dark);box-shadow:0 8px 32px rgba(200,148,58,.35);transform:translateY(-1px)}
+.form-secure{display:flex;align-items:center;justify-content:center;gap:.5rem;margin-top:1rem;font-family:'Poppins',sans-serif;font-size:.68rem;color:rgba(255,255,255,.3)}
+.form-success{display:none;text-align:center;padding:3rem 2rem}.form-right.submitted form{display:none}.form-right.submitted .form-success{display:block}
+.form-success .check-circle{width:64px;height:64px;background:var(--purple);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:2rem;color:var(--white)}
+.form-success h3{color:var(--white);font-size:1.3rem;margin-bottom:.5rem}.form-success p{color:rgba(255,255,255,.6);font-size:.95rem}
+.site-footer{background:var(--navy-deep);padding:3rem 0 2rem;border-top:1px solid rgba(195,181,146,.1)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}.footer-logo{height:32px}.footer-text{font-family:'Poppins',sans-serif;font-size:.72rem;color:rgba(255,255,255,.35)}
+.footer-links{display:flex;gap:2rem}.footer-links a{font-family:'Poppins',sans-serif;font-size:.72rem;color:rgba(255,255,255,.4);text-decoration:none;transition:color .3s}.footer-links a:hover{color:var(--accent)}
+@media(max-width:1024px){.hero-content{grid-template-columns:1fr}.hero-sidebar{display:none}.abstract-grid{grid-template-columns:1fr}.highlights-grid{grid-template-columns:1fr}.audience-grid{grid-template-columns:repeat(2,1fr)}.form-container{grid-template-columns:1fr}.sector-bar{grid-template-columns:repeat(3,1fr)}.curriculum-summary{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.header-nav{display:none}.hero-stats{flex-direction:column;gap:1rem}.hero-ctas{flex-direction:column}.audience-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.sector-bar{grid-template-columns:1fr}.curriculum-summary{grid-template-columns:1fr}.footer-inner{flex-direction:column;gap:1.5rem;text-align:center}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="header-inner"><img src="Logo_riskmathics_3D.PNG" alt="RiskMathics" class="header-logo"><nav class="header-nav"><a href="#abstract">Abstract</a><a href="#curriculum">Programa</a><a href="#audience">Audiencia</a><a href="#contact" class="btn-header-cta">Inscríbete →</a></nav></div></header>
+
+<section class="hero"><div class="hero-content"><div class="hero-text">
+<div class="hero-badge"><div class="dot"></div><span>Diplomado — Mayo 2026</span></div>
+<h1 class="display-xl">Factoraje<br><span class="accent">Financiero</span></h1>
+<p class="hero-tagline">Análisis de Crédito, Originación Inteligente y Modelo Centinela Antifraude</p>
+<p class="hero-date">Mayo 2026</p>
+<p class="hero-abstract">El diplomado más completo del mundo en factoraje financiero en idioma español. 200 horas en 23 módulos que cubren el ciclo completo: desde análisis crediticio y risk management hasta Trade Finance, International Factoring, FactorTech (IA, blockchain, integrated finance) y el Modelo Centinela Antifraude propietario.</p>
+<div class="hero-stats"><div><div class="hero-stat-number">200</div><div class="hero-stat-label">Horas</div></div><div><div class="hero-stat-number">76</div><div class="hero-stat-label">Sesiones</div></div><div><div class="hero-stat-number">23</div><div class="hero-stat-label">Módulos</div></div><div><div class="hero-stat-number">115</div><div class="hero-stat-label">Capstones</div></div></div>
+<div class="hero-ctas"><a href="#contact" class="btn-primary">Solicitar información →</a><a href="#curriculum" class="btn-secondary">Ver programa completo</a></div>
+</div>
+<div class="hero-sidebar"><h3>Ficha del programa</h3>
+<div class="sidebar-item"><span class="sidebar-item-label">Formato</span><span class="sidebar-item-value">Live online</span></div>
+<div class="sidebar-item"><span class="sidebar-item-label">Sesiones</span><span class="sidebar-item-value"><span class="hl">76</span> de 2.5h</span></div>
+<div class="sidebar-item"><span class="sidebar-item-label">Duración total</span><span class="sidebar-item-value"><span class="hl">200</span> horas</span></div>
+<div class="sidebar-item"><span class="sidebar-item-label">Duración</span><span class="sidebar-item-value">~8 meses</span></div>
+<div class="sidebar-item"><span class="sidebar-item-label">Idioma</span><span class="sidebar-item-value">Español + Eng técnico</span></div>
+<div class="sidebar-item"><span class="sidebar-item-label">Capstones</span><span class="sidebar-item-value"><span class="hl">23</span> proyectos</span></div>
+<div class="sidebar-start"><div class="label">Fecha de inicio</div><div class="date">Mayo 2026</div></div></div></div></section>
+
+<section class="abstract-section" id="abstract"><div class="container">
+<span class="section-label">Abstract ejecutivo</span>
+<h2 class="display-md" style="margin-top:.75rem;color:var(--navy)">Un mercado de USD $66B que el 97% de las empresas no conoce</h2>
+<div class="abstract-grid" style="margin-top:2.5rem"><div class="abstract-content">
+<p>La industria global de factoraje alcanzó <strong>EUR 3.9 Trillones (~USD 4.2T)</strong> en 2024, con CAGR de 7.8% en las últimas dos décadas. En México, el mercado mueve entre USD $36–66 mil millones, pero apenas el <strong>3% de las empresas</strong> ha utilizado factoraje alguna vez.</p>
+<p>El fenómeno del nearshoring posiciona a México como epicentro de una transformación estructural. IFC y Citi lanzaron una facilidad de <strong>USD 500 millones</strong> para Supply Chain Finance en México (2024). La penetración del factoraje sobre PIB es apenas 3% vs 14% en UK.</p>
+<p>Incluye <strong>6 módulos nuevos sin precedente</strong> (Financial Risk Management, Credit Analysis del Deudor, Módulo Comercial Real, Trade Finance, Confirming, International Factoring Avanzado) y el <strong>Modelo Centinela Antifraude</strong> propietario de RMFI.</p>
+</div><div>
+<div class="abstract-pullquote"><p>A ~USD 7,500, el diplomado ofrece 200 horas vs FCI Career Path (EUR 975, 25h), LIBF CSCF (GBP 750, 270h solo inglés) o ICC CTFP (~USD 1,100, 50h). 5.6x más contenido por dólar que la mejor alternativa.</p><div class="attribution">— Diplomado en Factoraje Financiero | RiskMathics</div></div></div></div>
+<div class="sector-bar">
+<div class="sector-chip">🌍 Mercado Global<span class="sub">EUR 3.9T (2024) · CAGR 7.8%</span></div>
+<div class="sector-chip">🇲🇽 México<span class="sub">USD $66.1B · 3% penetración sobre PIB</span></div>
+<div class="sector-chip">🏗️ Nearshoring<span class="sub">IFC/Citi $500M facility · USD 475B exports</span></div>
+<div class="sector-chip">🇮🇳 India<span class="sub">+120% crecimiento 2024</span></div>
+<div class="sector-chip">🤖 FactorTech<span class="sub">IA scoring +95% precisión · RWA $1.2B TVL</span></div>
+<div class="sector-chip">📋 MLETR<span class="sub">37% del PIB global cubierto</span></div>
+<div class="sector-chip">⚠️ Greensill<span class="sub">~$10B colapso · Lecciones integradas</span></div>
+<div class="sector-chip">📊 Penetración MX vs UK<span class="sub">3% vs 14% del PIB</span></div>
+<div class="sector-chip">💰 Inversión<span class="sub">~USD $7,500 · 5.6x más contenido/dólar</span></div>
+</div></div></section>
+
+<section class="highlights-section"><div class="container">
+<span class="section-label" style="color:var(--accent)">Diferenciadores</span>
+<h2 class="display-md" style="margin-top:.75rem;color:var(--white)">Por qué este diplomado es único en el mundo</h2>
+<div class="highlights-grid" style="margin-top:2.5rem">
+<div class="highlight-card"><div class="highlight-number">01</div><h3>Primer diplomado integral de factoraje en español</h3><p>200 horas en 23 módulos — el único programa en español que cubre el ciclo completo del factoraje a nivel avanzado.</p></div>
+<div class="highlight-card"><div class="highlight-number">02</div><h3>6 módulos nuevos sin precedente mundial</h3><p>Financial Risk Management, Credit Analysis del Deudor, Módulo Comercial Real, Trade Finance, Confirming, International Factoring Avanzado.</p></div>
+<div class="highlight-card"><div class="highlight-number">03</div><h3>115 capstones prácticos: 5 por módulo</h3><p>Técnico + Comercial + Caso Real + Role Play/Simulación + Proyecto Integrador. Portafolio profesional tangible.</p></div>
+<div class="highlight-card"><div class="highlight-number">04</div><h3>FactorTech: 3 módulos exclusivos de tecnología</h3><p>IA/ML para scoring y fraude, Blockchain/tokenización RWA/MLETR, Integrated Finance y Open Banking. No existe en FCI ni LIBF.</p></div>
+<div class="highlight-card"><div class="highlight-number">05</div><h3>Modelo Centinela Antifraude: 10 horas de vanguardia</h3><p>Sistema propietario RMFI: neurolingüística, OSINT, biometría, verificación satelital, triangulación SAT/Buró/REPUVE, análisis forense.</p></div>
+<div class="highlight-card"><div class="highlight-number">06</div><h3>Trade Finance + Confirming + International Factoring</h3><p>LCs, garantías, forfaiting, ECAs, Two-Factor System, GRIF, UNIDROIT/UNCITRAL, securitización cross-border, T-MEC.</p></div>
+<div class="highlight-card"><div class="highlight-number">07</div><h3>Lecciones forenses: Greensill, Wirecard, NMC Health</h3><p>Análisis forense de los colapsos que cambiaron la industria: concentración, estructuras off-balance, fallas en auditoría.</p></div>
+<div class="highlight-card"><div class="highlight-number">08</div><h3>5.6x más contenido por dólar que la competencia</h3><p>~USD $7,500 por 200h vs FCI (EUR 975/25h), LIBF CSCF (GBP 750/270h inglés), ICC CTFP ($1,100/50h).</p></div>
+</div></div></section>
+
+<section class="audience-section" id="audience"><div class="container">
+<span class="section-label">Para quién</span>
+<h2 class="display-md" style="margin-top:.75rem">Toda la cadena de valor del factoraje y Supply Chain Finance</h2>
+<div class="audience-grid">
+<div class="audience-card"><h4>🏦 Banca Comercial y Desarrollo</h4><p>Directores Banca Empresarial, Gerentes SCF, Trade Finance, Crédito, Riesgos.</p></div>
+<div class="audience-card"><h4>💳 SOFOMs</h4><p>Reguladas y no reguladas — originación, riesgo, operaciones, tecnología de factoraje.</p></div>
+<div class="audience-card"><h4>📄 Empresas de Factoraje</h4><p>Ejecutivos de cuenta, compliance officers, analistas de crédito, operaciones.</p></div>
+<div class="audience-card"><h4>⚡ FinTechs de SCF</h4><p>Plataformas de factoraje digital, supply chain finance, BNPL B2B, embedded factoring.</p></div>
+<div class="audience-card"><h4>🏢 Corporativos y PyMEs</h4><p>CFOs, tesoreros, directores de compras — compradores de factoraje y reverse factoring.</p></div>
+<div class="audience-card"><h4>💰 Fondos de Crédito</h4><p>Fondos de deuda, fondos de factoraje, inversión en receivables, structured credit.</p></div>
+<div class="audience-card"><h4>🔍 Consultoras & Legales</h4><p>Despachos especializados en trade finance, factoraje internacional, compliance.</p></div>
+<div class="audience-card"><h4>⚖️ Reguladores</h4><p>CNBV, Banxico, CONDUSEF — supervisión del ecosistema de factoraje.</p></div>
+<div class="audience-card"><h4>🏗️ Nearshoring Players</h4><p>Proveedores y OEMs en cadenas de suministro que necesitan financiamiento inteligente.</p></div>
+</div></div></section>
+
+<section class="curriculum-section" id="curriculum"><div class="container">
+<span class="section-label">Arquitectura del programa</span>
+<h2 class="display-md" style="margin-top:.75rem">23 módulos · 200 horas · 115 capstones · 7 fases</h2>
+<p class="body-lg" style="color:var(--text-secondary);margin-top:1rem;max-width:700px">Sesiones de 2.5 horas, virtual live. Cada módulo incluye 5 capstones: técnico, comercial, caso real, role play y proyecto integrador. 115 entregables profesionales.</p>
+
+    <div class="phase-header" style="margin-top:3rem"><span class="phase-tag">Fase 1</span><h3>Fundamentos y Contexto Global — 35h</h3></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">01</div><div class="module-info"><h4>Panorama Global del Factoraje y Supply Chain Finance</h4><div class="module-meta">2 clases · 5h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Mercado global 2024–2026: EUR 3,894B, CAGR 7.8%, distribución regional</li><li>México y LATAM: USD $66.1B, nearshoring, 3% penetración</li><li>Actores: bancos, SOFOMs, FinTechs, FCI, fondos de crédito</li><li>Tendencias 2024–2030: FactorTech, MLETR, ESG, tokenización</li></ul></div></div></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">02</div><div class="module-info"><h4>Arquitectura de Productos: Factoraje, Confirming y Modalidades</h4><div class="module-meta">4 clases · 10h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Con recurso vs sin recurso: diseño legal y contable</li><li>Notificado vs no notificado: cesiones y riesgos</li><li>Confirming y SCF: flujos y modelos FCI</li><li>Modalidades: exportación, gobierno, nómina</li><li>Documentación: contratos, endosos, CFDI</li></ul></div></div></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">03</div><div class="module-info"><h4>Marco Regulatorio, Compliance y PLD/KYC</h4><div class="module-meta">2 clases · 5h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>LGTOC, Código de Comercio, regulación CNBV</li><li>PLD/FT y KYC: obligaciones, sanciones</li><li>Regulación comparada: EU, UK, Singapur</li><li>Compliance operativo y gobierno corporativo</li></ul></div></div></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">04</div><div class="module-info"><h4>Financial Risk Management en Factoraje <span style="color:var(--accent-dark);font-size:.7rem">← NUEVO</span></h4><div class="module-meta">6 clases · 15h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Riesgo de tasa: TIIE, SOFR, curvas forward</li><li>Riesgo FX: operaciones cross-border</li><li>Riesgo de liquidez: ALM, funding gaps</li><li>Concentración: HHI, límites sectoriales</li><li>Riesgo operacional: Basilea III, matrices</li></ul></div></div></div>
+
+    <div class="phase-header"><span class="phase-tag">Fase 2</span><h3>Crédito y Análisis de Deudores — 32.5h</h3></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">05</div><div class="module-info"><h4>Análisis de Riesgo Crediticio del Deudor <span style="color:var(--accent-dark);font-size:.7rem">← NUEVO</span></h4><div class="module-meta">6 clases · 15h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Modelos PD/LGD/EAD aplicados al factoraje</li><li>Scoring sectorial y behavioural scoring</li><li>Análisis de estados financieros del deudor</li><li>Early Warning Systems: indicadores líder</li><li>Riesgo soberano para deudores gubernamentales</li></ul></div></div></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">06</div><div class="module-info"><h4>Due Diligence Operativa, Legal y Contable</h4><div class="module-meta">3 clases · 7.5h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>DD del cedente: legal, operativa, contable</li><li>Verificación de facturas: CFDI/SAT, triangulación</li><li>Red flags operativos y documentales</li><li>Protocolo RMFI de due diligence integral</li></ul></div></div></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">07</div><div class="module-info"><h4>Análisis Financiero Aplicado al Factoraje</h4><div class="module-meta">2 clases · 5h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Ratios financieros clave, flujo de efectivo, DSO</li><li>Valuación de cuentas por cobrar</li><li>Modelado financiero en Excel/Python</li></ul></div></div></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">08</div><div class="module-info"><h4>Administración de Cartera, ECL y Stress Testing</h4><div class="module-meta">2 clases · 5h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>IFRS 9 / ECL: PD×LGD×EAD para factoraje</li><li>Vintage analysis, migration matrices, HHI</li><li>Stress testing: escenarios macro</li><li>Administración del ciclo de cobro post-Greensill</li></ul></div></div></div>
+
+    <div class="phase-header"><span class="phase-tag">Fase 3</span><h3>Comercial y Originación — 20h</h3></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">09</div><div class="module-info"><h4>Prospección, Targeting y el Cliente Ideal</h4><div class="module-meta">2 clases · 5h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Ideal Customer Profile (ICP) para factoraje</li><li>Segmentación: sector, tamaño, cadena de valor</li><li>Fuentes: DENUE, SAT, cámaras; Pipeline y CRM</li></ul></div></div></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">10</div><div class="module-info"><h4>Venta Consultiva: MEDDIC 2.0 Aplicado al Factoraje</h4><div class="module-meta">4 clases · 10h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>MEDDIC 2.0 RiskMathics: adaptación al factoraje</li><li>Metrics: ROI del factoraje para el cliente</li><li>Economic Buyer, Champion, political mapping</li><li>Negociación de precio y defensa de margen</li></ul></div></div></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">11</div><div class="module-info"><h4>El Módulo Comercial: Lo Que No Viene en los Libros <span style="color:var(--accent-dark);font-size:.7rem">← NUEVO</span></h4><div class="module-meta">2 clases · 5h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Realidades del mercado vs teoría académica</li><li>Gestión de relaciones con bancos y fondeos</li><li>Networking estratégico y manejo de objeciones reales</li></ul></div></div></div>
+
+    <div class="phase-header"><span class="phase-tag">Fase 4</span><h3>Trade Finance y Factoraje Internacional — 45h</h3></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">12</div><div class="module-info"><h4>Trade Finance: Instrumentos, Estructuras y Mercados <span style="color:var(--accent-dark);font-size:.7rem">← NUEVO</span></h4><div class="module-meta">4 clases · 10h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Cartas de crédito (LCs), garantías standby, forfaiting</li><li>Export Credit Agencies (ECAs), trade insurance</li><li>Integración factoraje dentro del ecosistema trade finance</li></ul></div></div></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">13</div><div class="module-info"><h4>Factoraje Internacional y el Two-Factor System</h4><div class="module-meta">4 clases · 10h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Two-Factor System de FCI: mecánica operativa</li><li>Import/Export Factor: roles y responsabilidades</li><li>GRIF (General Rules of International Factoring)</li><li>Riesgo país, riesgo de divisa, settlement cross-border</li></ul></div></div></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">14</div><div class="module-info"><h4>Confirming: Definición, Importancia y Operativa Global <span style="color:var(--accent-dark);font-size:.7rem">← NUEVO</span></h4><div class="module-meta">6 clases · 15h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Confirming / reverse factoring: flujos globales</li><li>Plataformas SCF: SAP Taulia, C2FO, PrimeRevenue, Orbian</li><li>Confirming bancario vs no-bancario</li><li>Integración con ERPs y procurement</li></ul></div></div></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">15</div><div class="module-info"><h4>International Factoring Avanzado: Cross-Border <span style="color:var(--accent-dark);font-size:.7rem">← NUEVO</span></h4><div class="module-meta">4 clases · 10h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Marcos multi-jurisdiccionales: UNIDROIT/UNCITRAL/GRIF</li><li>Import Factor como rol estratégico</li><li>Securitización cross-border, T-MEC</li><li>Sanctions compliance y political risk</li></ul></div></div></div>
+
+    <div class="phase-header"><span class="phase-tag">Fase 5</span><h3>FactorTech e Innovación — 30h</h3></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">16</div><div class="module-info"><h4>FactorTech I: IA, Machine Learning y Automatización</h4><div class="module-meta">6 clases · 15h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>IA/ML para scoring de factoraje: +95% precisión en predicción de pagos</li><li>Automatización de underwriting y decisioning</li><li>Fraud detection con ML: identidad sintética, facturas fantasma</li><li>NLP para análisis documental automatizado</li></ul></div></div></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">17</div><div class="module-info"><h4>FactorTech II: Blockchain, Tokenización y MLETR</h4><div class="module-meta">3 clases · 7.5h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Tokenización de receivables como RWA: Centrifuge $1.2B TVL</li><li>MLETR: UK, Francia, Singapur, Golfo — 37% PIB global</li><li>Smart contracts para factoraje: automatización de waterfall</li></ul></div></div></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">18</div><div class="module-info"><h4>FactorTech III: Integrated Finance, Open Banking & SCF Platforms</h4><div class="module-meta">3 clases · 7.5h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Finanzas integradas en ERPs: SAP Taulia $800B en transacciones</li><li>Open Banking y Open Accounting para decisiones instantáneas</li><li>Deep-Tier SCF: financiamiento de proveedores Tier-2 y Tier-3</li></ul></div></div></div>
+
+    <div class="phase-header"><span class="phase-tag">Fase 6</span><h3>Antifraude, Precio y Defensa de Margen — 17.5h</h3></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">19</div><div class="module-info"><h4>Modelo Centinela: Detección de Fraude con Tecnología de Vanguardia</h4><div class="module-meta">4 clases · 10h · Propietario RMFI</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-objective"><h5>Objetivo</h5><p>Sistema antifraude propietario de RMFI que combina neurolingüística, OSINT, biometría facial, verificación satelital, triangulación SAT/Buró/REPUVE y análisis forense.</p></div><div class="module-topics"><h5>Temario</h5><ul><li>Neurolingüística aplicada a entrevistas de crédito</li><li>OSINT: inteligencia de fuentes abiertas para verificación</li><li>Biometría facial y verificación satelital de domicilios</li><li>Triangulación SAT/Buró/REPUVE/IMSS</li><li>Análisis forense: Greensill, Wirecard, NMC Health</li></ul></div></div></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">20</div><div class="module-info"><h4>Precio, Estructuración Comercial y Defensa de Margen</h4><div class="module-meta">3 clases · 7.5h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Estructuración de precio: tasa, comisiones, descuento</li><li>Defensa de margen ante competencia bancaria</li><li>Pricing por riesgo y segmento</li></ul></div></div></div>
+
+    <div class="phase-header"><span class="phase-tag">Fase 7</span><h3>Integración y Certificación — 20h</h3></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">21</div><div class="module-info"><h4>Laboratorio Integral End-to-End</h4><div class="module-meta">4 clases · 10h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Simulación completa: originación → análisis → aprobación → fondeo → cobro</li><li>Integración de todos los módulos en operación real</li></ul></div></div></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">22</div><div class="module-info"><h4>Laboratorio de International Factoring & Trade Finance <span style="color:var(--accent-dark);font-size:.7rem">← NUEVO</span></h4><div class="module-meta">2 clases · 5h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Simulación de operación internacional Two-Factor System</li><li>Estructuración de trade finance completa con factoraje</li></ul></div></div></div>
+    <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">23</div><div class="module-info"><h4>Evaluación y Certificación Final</h4><div class="module-meta">2 clases · 5h</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Examen integral de certificación</li><li>Defensa de proyecto ante panel evaluador</li><li>Certificación de dos niveles RiskMathics</li></ul></div></div></div>
+
+<div class="curriculum-summary"><div class="summary-item"><div class="number">23</div><div class="label">Módulos</div></div><div class="summary-item"><div class="number">200</div><div class="label">Horas</div></div><div class="summary-item"><div class="number">115</div><div class="label">Capstones</div></div><div class="summary-item"><div class="number">23</div><div class="label">Capstones</div></div></div>
+</div></section>
+
+<section class="form-section" id="contact"><div class="container"><div class="form-container">
+<div class="form-left"><span class="section-label" style="color:var(--accent)">Inscripción</span>
+<h2 class="display-md" style="margin-top:.75rem">Asegura tu lugar en el<br>Análisis de Crédito, Originación Inteligente y Modelo Centinela Antifraude</h2>
+<p>Completa el formulario para recibir información detallada sobre costos, calendario y proceso de admisión.</p>
+<ul class="form-benefits"><li><span class="check">✓</span> Brochure completo — 22 módulos con temarios</li><li><span class="check">✓</span> Calendario y estructura de capstones</li><li><span class="check">✓</span> Opciones de inversión y financiamiento</li><li><span class="check">✓</span> Licencias corporativas e institucionales</li><li><span class="check">✓</span> Acceso early-bird pricing</li></ul></div>
+<div class="form-right" id="formContainer"><h3>Solicitar información</h3><div class="form-subtitle">Campos con * son obligatorios</div>
+<form id="croForm" onsubmit="handleSubmit(event)">
+<div class="form-row"><div class="form-group"><label>Name *</label><input type="text" name="firstName" required placeholder="Carlos"></div><div class="form-group"><label>Surname *</label><input type="text" name="lastName" required placeholder="Rodríguez"></div></div>
+<div class="form-group"><label>Title *</label><input type="text" name="title" required placeholder="CRO, Head of Risk, VP Treasury"></div>
+<div class="form-group"><label>Company *</label><input type="text" name="company" required placeholder="BBVA, Banorte, CNBV, Stori"></div>
+<div class="form-group"><label>Business Email *</label><input type="email" id="email" name="email" required placeholder="nombre@empresa.com"><div class="form-disclaimer">Se requiere correo corporativo.</div></div>
+<div class="form-group"><label>Sector *</label><select name="sector" required><option value="" disabled selected>Selecciona</option><option>Bank / Banca</option><option>Insurance / Reinsurer</option><option>Pension Fund / AFORE</option><option>Broker-Dealer / Casa de Bolsa</option><option>Corporate Large/Mid</option><option>Financiera Corporativa</option><option>Fintech / Neobank</option><option>SOFOM / SOFIPO</option><option>Regulador / Gobierno</option><option>Consulting / Big 4</option><option>Technology / RegTech</option><option>Other</option></select></div>
+<div class="form-group"><label>Interés</label><select name="interest"><option value="" disabled selected>¿Qué buscas?</option><option>Inscripción individual</option><option>Licencia corporativa</option><option>Más información</option><option>Módulos específicos</option></select></div>
+<button type="submit" class="btn-submit">Solicitar información →</button>
+<div class="form-secure">🔒 Información protegida.</div></form>
+<div class="form-success"><div class="check-circle">✓</div><h3>¡Solicitud enviada!</h3><p>Te contactaremos en 24 horas con toda la información del Diplomado en Factoraje Financiero.</p></div></div>
+</div></div></section>
+
+<footer class="site-footer"><div class="container"><div class="footer-inner"><div style="display:flex;align-items:center;gap:1rem"><img src="Logo_riskmathics_3D.PNG" alt="RiskMathics" class="footer-logo"><span class="footer-text">© 2026 RiskMathics Financial Innovation Institute.</span></div><div class="footer-links"><a href="javascript:void(0)">Términos</a><a href="javascript:void(0)">Privacidad</a><a href="javascript:void(0)">Contacto</a></div></div></div></footer>
+
+<script>
+function toggleModule(h){h.parentElement.classList.toggle('active')}
+function handleSubmit(e){e.preventDefault();const d=document.getElementById('email').value.split('@')[1]?.toLowerCase();if(['gmail.com','hotmail.com','yahoo.com','outlook.com','live.com'].includes(d)){alert('Por favor usa tu correo corporativo.');return}document.getElementById('formContainer').classList.add('submitted');console.log('CRO:',Object.fromEntries(new FormData(e.target)))}
+window.addEventListener('scroll',()=>{document.querySelector('.site-header').style.padding=window.pageYOffset>100?'.6rem 0':'1rem 0'})
+</script>
+</body>
+</html>
